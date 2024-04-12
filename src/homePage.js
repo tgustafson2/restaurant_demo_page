@@ -39,4 +39,4 @@ function getHomePage(){
     
 }
 
-export { getHomePage }
+export { getHomePage };
