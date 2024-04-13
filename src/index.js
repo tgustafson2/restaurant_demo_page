@@ -1,5 +1,6 @@
 import { getHomePage } from "./homePage";
 import { getAboutPage } from "./aboutPage";
+import { getMenuPage } from "./menuPage";
 
 const content = document.querySelector("#content");
 const homeBtn = document.querySelector("#home");
@@ -13,7 +14,7 @@ homeBtn.addEventListener('click', event =>{
 
 menuBtn.addEventListener('click', event =>{
     content.replaceChildren();
-    // content.append(getMenuPage());
+    content.append(getMenuPage());
 })
 
 aboutBtn.addEventListener('click', event =>{

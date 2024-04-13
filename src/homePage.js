@@ -1,6 +1,6 @@
 
 const homePage = document.createElement('div');
-homePage.className = "home";
+homePage.id = "home";
 
 const restaurantName = document.createElement('h1');
 restaurantName.className = "restaurant-name";
