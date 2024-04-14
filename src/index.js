@@ -1,11 +1,12 @@
 import { getHomePage } from "./homePage";
 import { getAboutPage } from "./aboutPage";
 import { getMenuPage } from "./menuPage";
+import "./style.css";
 
 const content = document.querySelector("#content");
-const homeBtn = document.querySelector("#home");
-const menuBtn = document.querySelector("#menu");
-const aboutBtn = document.querySelector("#about");
+const homeBtn = document.querySelector("#home-btn");
+const menuBtn = document.querySelector("#menu-btn");
+const aboutBtn = document.querySelector("#about-btn");
 
 homeBtn.addEventListener('click', event =>{
     content.replaceChildren();

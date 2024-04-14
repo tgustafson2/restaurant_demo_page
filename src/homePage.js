@@ -1,4 +1,4 @@
-
+import kitchen from './kitchen.jpg';
 const homePage = document.createElement('div');
 homePage.id = "home";
 
@@ -10,9 +10,15 @@ const promoPicture = document.createElement('div');
 promoPicture.classList.add("card");
 promoPicture.classList.add("promo-picture-container");
 
-const picture = document.createElement('img');
-picture.src = "./skjf.png";
+const picture = new Image();
+picture.src = kitchen;
 promoPicture.appendChild(picture);
+const picCredit = document.createElement("div");
+picCredit.classList.add("img-credit");
+const picCreditText = document.createElement("p");
+picCreditText.innerText = "Image by Freepik";
+picCredit.appendChild(picCreditText);
+promoPicture.appendChild(picCredit);
 
 const descriptionContainer = document.createElement('div');
 descriptionContainer.classList.add("card");
