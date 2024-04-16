@@ -1,8 +1,8 @@
 :root{
-    --color-one : #686361;
-    --color-two : #E32227;
-    --color-three : #1A7CFA;
-    --color-four : #0070E0;
+    --color-one : #FFFDFC;
+    --color-two : #62646B;
+    --color-three : #212A31;
+    --color-four : #A73711;
 }
 
 *{
@@ -17,6 +17,7 @@
     grid-template-columns: repeat(3,100px);
     justify-content: center;
     gap: 64px;
+    box-shadow: 0px 2px 2px var(--color-two);
 }
 
 .nav-buttons{
@@ -26,8 +27,8 @@
     background-color: var(--color-three);
     color: var(--color-two);
     font-weight: bolder;
-    border-color: var(--color-two);
-    border-width: 1px;
+    /* border-color: var(--color-two); */
+    border-width: 0px;
 }
 
 body{
@@ -40,6 +41,7 @@ body{
     margin-right: auto;
     margin-left: auto;
     min-height: calc(100vh - 64px);
+    box-shadow: 2px 0px 2px var(--color-three);
 }
 
 #home{
@@ -81,10 +83,11 @@ body{
     border-color: var(--color-four);
     border-style: solid;
     border-width: 4px;
-    color: var(--color-one);
+    color: var(--color-two);
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .card>p{
@@ -100,4 +103,19 @@ body{
     align-self: flex-end;
     padding-top: 24px;
     padding-right: 48px;
+}
+
+#menu-page ,
+#about-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-page > .card,
+#about-page > .card{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 16px;
+    text-align: center;
 }
